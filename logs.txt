@@ -1,0 +1,6 @@
+El nombre del cliente está vacío
+La duración debe ser mayor a 0
+division by zero
+El nombre del cliente está vacío
+La duración debe ser mayor a 0
+division by zero
