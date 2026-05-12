@@ -3,6 +3,13 @@
 Proyecto desarrollado para la Fase 4 del curso de Programación de la Universidad Nacional Abierta y a Distancia (UNAD).
 
 ---
+## Integrantes
+
+Carlos Alberto Vargas Soler 
+
+Angelica Cristina Ortiz Paternina
+
+---
 ## Descripción
 
 El sistema permite gestionar clientes, servicios y reservas para la empresa ficticia Software FJ, utilizando Programación Orientada a Objetos (POO) en Python y manejo avanzado de excepciones.
