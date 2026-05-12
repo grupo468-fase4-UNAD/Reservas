@@ -1,4 +1,4 @@
-# 📌 Sistema Integral de Gestión de Clientes, Servicios y Reservas
+# Sistema Integral de Gestión de Clientes, Servicios y Reservas
 
 Proyecto desarrollado para la Fase 4 del curso de Programación de la Universidad Nacional Abierta y a Distancia (UNAD).
 
@@ -12,7 +12,7 @@ El proyecto fue desarrollado sin bases de datos, utilizando estructuras de objet
 
 ---
 
-## 🚀 Características principales
+## Características principales
 
 ✔️ Programación Orientada a Objetos  
 ✔️ Clases abstractas  
@@ -28,7 +28,7 @@ El proyecto fue desarrollado sin bases de datos, utilizando estructuras de objet
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 Reservas/
@@ -41,7 +41,7 @@ Reservas/
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python
 - Programación Orientada a Objetos (POO)
