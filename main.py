@@ -5,6 +5,8 @@ from clases.servicio import (
     Asesoria
 )
 from clases.reserva import Reserva
+from clases.sistema import SistemaFJ
+from clases.excepciones import SistemaError
 
 
 # ==========================================
@@ -55,6 +57,8 @@ clientes = []
 servicios = []
 reservas = []
 
+sistema = SistemaFJ()
+
 
 # ==========================================
 # OPERACIÓN 1 - CLIENTE VÁLIDO
@@ -62,7 +66,7 @@ reservas = []
 
 try:
 
-    cliente1 = Cliente(
+    cliente1 = sistema.registrar_cliente(
         "Carlos Vargas",
         1095402120,
         "3184020351"
@@ -90,7 +94,7 @@ except Exception as e:
 
 try:
 
-    cliente2 = Cliente(
+    cliente2 = sistema.registrar_cliente(
         "",
         123,
         "111"
@@ -118,6 +122,7 @@ try:
     )
 
     servicios.append(sala)
+    sistema.registrar_servicio(sala)
 
     print(sala.descripcion())
 
@@ -145,6 +150,7 @@ try:
     )
 
     servicios.append(equipo)
+    sistema.registrar_servicio(equipo)
 
     print(equipo.descripcion())
 
@@ -172,6 +178,7 @@ try:
     )
 
     servicios.append(asesoria)
+    sistema.registrar_servicio(asesoria)
 
     print(asesoria.descripcion())
 
@@ -192,7 +199,7 @@ except Exception as e:
 
 try:
 
-    reserva1 = Reserva(
+    reserva1 = sistema.crear_reserva(
         cliente1,
         sala,
         3
@@ -224,7 +231,7 @@ except Exception as e:
 
 try:
 
-    reserva2 = Reserva(
+    reserva2 = sistema.crear_reserva(
         cliente1,
         asesoria,
         -1
@@ -268,7 +275,7 @@ except Exception as e:
 
 try:
 
-    reserva3 = Reserva(
+    reserva3 = sistema.crear_reserva(
         cliente1,
         equipo,
         2
@@ -305,6 +312,86 @@ except Exception as e:
     print("ERROR CRÍTICO:", e)
 
     guardar_log(e)
+
+else:
+
+    guardar_evento("Operación 10 completada sin errores")
+
+finally:
+
+    print("Finalizado el intento de operación crítica")
+
+
+# ==========================================
+# OPERACIÓN 11 - SERVICIO NO DISPONIBLE
+# ==========================================
+
+try:
+
+    servicio_no_registrado = ReservaSala(
+        "Sala Secreta",
+        150000,
+        10
+    )
+
+    reserva4 = sistema.crear_reserva(
+        cliente1,
+        servicio_no_registrado,
+        1
+    )
+
+    print(reserva4.mostrar_reserva())
+
+except SistemaError as e:
+
+    print("ERROR DE SISTEMA:", e)
+
+    guardar_log(e)
+
+except Exception as e:
+
+    print("ERROR:", e)
+
+    guardar_log(e)
+
+else:
+
+    guardar_evento(
+        "Reserva creada con servicio no registrado"
+    )
+
+finally:
+
+    print("Intento de reserva con servicio no disponible finalizado")
+
+
+# ==========================================
+# OPERACIÓN 12 - CANCELACIÓN DE RESERVA
+# ==========================================
+
+try:
+
+    sistema.cancelar_reserva(reserva3)
+
+    print("Reserva cancelada:", reserva3.mostrar_reserva())
+
+    guardar_evento(
+        "Reserva cancelada correctamente"
+    )
+
+except Exception as e:
+
+    print("ERROR:", e)
+
+    guardar_log(e)
+
+else:
+
+    print("La reserva fue cancelada sin excepciones")
+
+finally:
+
+    print("Finalizado el intento de cancelación")
 
 
 # ==========================================

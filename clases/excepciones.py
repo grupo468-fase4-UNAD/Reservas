@@ -11,3 +11,8 @@ class ServicioError(Exception):
 class ReservaError(Exception):
     """Excepción para errores de reservas"""
     pass
+
+
+class SistemaError(Exception):
+    """Excepción para errores del sistema"""
+    pass

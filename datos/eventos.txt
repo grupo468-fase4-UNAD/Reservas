@@ -14,3 +14,65 @@ Reserva confirmada para Carlos Vargas
 
 Sistema finalizado correctamente
 
+
+========== EVENTOS DEL SISTEMA ==========
+
+Sistema iniciado correctamente
+
+Cliente registrado: Carlos Vargas
+Servicio creado: Sala VIP
+Servicio creado: Portátil Gamer
+Servicio creado: Python Avanzado
+Reserva confirmada para Carlos Vargas
+Cálculo de costo realizado correctamente
+Reserva confirmada para Carlos Vargas
+
+Sistema finalizado correctamente
+
+
+========== EVENTOS DEL SISTEMA ==========
+
+Sistema iniciado correctamente
+
+Cliente registrado: Carlos Vargas
+Servicio creado: Sala VIP
+Servicio creado: Portátil Gamer
+Servicio creado: Python Avanzado
+Reserva confirmada para Carlos Vargas
+Cálculo de costo realizado correctamente
+Reserva confirmada para Carlos Vargas
+
+Sistema finalizado correctamente
+
+
+========== EVENTOS DEL SISTEMA ==========
+
+Sistema iniciado correctamente
+
+Cliente registrado: Carlos Vargas
+Servicio creado: Sala VIP
+Servicio creado: Portátil Gamer
+Servicio creado: Python Avanzado
+Reserva confirmada para Carlos Vargas
+Cálculo de costo realizado correctamente
+Reserva confirmada para Carlos Vargas
+Reserva cancelada correctamente
+
+Sistema finalizado correctamente
+
+
+========== EVENTOS DEL SISTEMA ==========
+
+Sistema iniciado correctamente
+
+Cliente registrado: Carlos Vargas
+Servicio creado: Sala VIP
+Servicio creado: Portátil Gamer
+Servicio creado: Python Avanzado
+Reserva confirmada para Carlos Vargas
+Cálculo de costo realizado correctamente
+Reserva confirmada para Carlos Vargas
+Reserva cancelada correctamente
+
+Sistema finalizado correctamente
+
