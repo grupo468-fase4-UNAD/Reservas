@@ -26,32 +26,4 @@ El proyecto fue desarrollado sin bases de datos, utilizando estructuras de objet
 ✔️ Gestión de servicios  
 ✔️ Gestión de reservas  
 
----
 
-## Estructura del proyecto
-
-```bash
-Reservas/
-│── clases/
-│── datos/
-│── main.py
-│── logs.txt
-│── README.md
-```
-
----
-
-## Tecnologías utilizadas
-
-- Python
-- Programación Orientada a Objetos (POO)
-- Manejo de archivos TXT
-- Manejo de excepciones
-
----
-
-## ▶️ Ejecución del proyecto
-
-```bash
-python main.py
-```
